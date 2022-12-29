@@ -52,7 +52,7 @@ HR 이 뭐더라 여튼 암튼 있으니까 넣어본다. 이건 닫지 않는�
 금전 수입 관리, 지출 관리, 여튼 암튼 그런거 만들고 싶다 todo
 pbr</p><br><br>
 
-<h2>h2 git에 커밋하기<h2>
+<h2>h2 git에 커밋하기</h2>
 <pre>pre
 
 일단 내가 한게 뭔지 모르겠어서 Initial commit 한 번 해보고 왔다.
@@ -67,6 +67,8 @@ pre
 <h3>h3여기서 보이는 것과 깃에서 보이는 것도 좀 다르더라.</h3>
 
 <h4>h4"로컬 프로젝트"란 지금 여기서 이걸 만드는 것을 의미한다.</h4>
+
+<pre>
 핸드폰 내의 index.html 파일을 편집하는 것이 로컬 프로젝트.
 일단 dropbox에 올리기도 했다. 여기서 바로 드롭박스로 올릴 수 있기 때문에. 
 
@@ -132,16 +134,152 @@ hl이 아니라 h1
 h1과 h2가 구분이 되지 않음
 
 pre 이후에 폰트 변경 이슈 있나? 무슨 태그를 닫지 않은 것이 영향이 있나.
+</pre>
 
         <pre>
-            <h2>hello
+            <h1>hello
                     world
-            </h2>
+            </h1>
         </pre>
-
+<pre>
 과제 샘플 카피페
 
 수정이 안먹혀서 테스팅 중.
+
+됐다 됐다
+나중에 연동 방법도 한번 문서 작성 해야지.
+
+근데 아쥬르 나만 안되는거임 대체 머냐
+</pre>
+
+<pre>
+일단 pre에 넣어두고 하면 되겠다.
+프레 안에 들어간 태그는 약간? 이상하게 발동된다.
+h1 태그를 넣었는데 글자가 굵게 아웃됨. 이건 잘 모르겠음.
+
+이하는 태그 테스트 카피페
+</pre>
+
+        <b>bold text</b><br>
+        <strong>strong text</strong><br>
+        <i>italic text</i><br>
+        <em>emphasized text</em><br>
+        <mark>mark text</mark><br>
+        <small>small text</small><br>
+        <del>deleted text</del><br>
+        <ins>inserted text</ins><br>
+        This is <sup>superscript text</sup><br>
+        This is <sub>subscript text</sub>
+        
+
+<pre>
+bold 굵게
+strong 스트롱은 뭐지?
+이탤릭
+강조
+마크
+스몰
+삭제
+삽입 텍스트
+수퍼스크립트
+섭스크립
+</pre>
+
+        <h2>Unordered List</h2>
+        <ul type="square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        </ul>  
+ul타입 스퀘어
+        <h2>Ordered List</h2>
+        <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        </ol> 
+<pre>
+ol타입 에이
+
+a href 하이퍼링크
+a href ="" target ="_blank"
+_blank 옵션은 새창 열기 a닫기
+
+이하 링크 테스트 카피페
+</pre>
+
+        <h1>Menu</h1>
+        <a href="#index1">Coffee</a><br>
+        <a href="#index2">Cake</a><br>
+        <a href="#index3">Juice</a><br>
+
+        
+        <h2 id="index1">Menu01::Coffee</h2>
+        <ul>
+            <li>Americano</li>
+            <li>Cappuccino</li>
+            <li>Cafe latte</li>
+        </ul>
+        
+        <h2 id="index2">Menu02::Cake</h2>
+        <ul>
+            <li>Carrot cake</li>
+            <li>black tea cake</li>
+            <li>Strawberry shortcake</li>
+        </ul>
+        
+        <h2 id="index3">Menu03::Juice</h2>
+        <ul>
+            <li>orange</li>
+            <li>grape</li>
+            <li>watermelon</li>
+        </ul>
+
+블럭, 인라인 태그 차이
+
+        <h3>block tag - div</h3>
+        <div>Hello</div> <div>World</div>
+        <hr>
+        <h3>inline tag - span</h3>
+        <span>Hello</span> <span>World</span>
+<pre>
+열고 이미지img 소스src ="이미지 주소" alt="이미지 제목"닫고
+
+이미지 주소가 없을 경우 이미지 제목이 대신 보임
+이미지 주소는 로컬 이미지를 사용 가능
+
+todo wiki 엔진 도입
+워드프레스 도입
+
+<img src="https://via.placeholder.com/500x200">  -> 가로500px, 세로200px 의 이미지를 생성해 가지고 옴
+
+절대경로
+웹서버의 루트(Document root)를 기준으로 하는 경로.
+html 문서의 최상위 위치를 기준으로 하는 경로로 현재 PC의 하드 디스크를 기준으로 하는 것이 아니라 웹서버를 통해 서비스되는 경우 html 파일들이 위치하는 시작점을 /(root) 로 하고 하위 콘텐츠의 위치를 지정하는 방법 입니다.
+
+출처: https://dinfree.com/lecture/frontend/121_html_3.html
+
+02: 테이블 태그
+
+표를 만들기 위해서는 tabel 태그를 사용합니다. 로우(행,row)와 컬럼(열,Cloumn)을 표현하기 위해 tr>, td>, th>같은 태그와 함께 작성합니다. tr>을 사용해 행을 정의하고 td>를 사용해 각 행에서 칸(열)을 나누는 기능을 합니다. 제목에 해당하는 열을 정의할 때는 th> 태그를 사용합니다.
+
+테이블 구조
+[그림 : 테이블 구조]
+테이블 태그에는 테두리 두께를 지정하는 border 등 다양한 속성이 있으나 가급적이면 기본 태그로 컬럼과 로우 구조를 만드는 정도만 사용하고 css 를 사용해 디자인요소를 지정하는 것이 올바른 방법 입니다.
+
+참고 자료
+
+W3Schools.com HTML 강좌: <br>https://www.w3schools.com/html/default.asp
+Mozilla HTML 개발자 문서 : <br>https://developer.mozilla.org/ko/docs/Learn/HTML
+Codecademy HTML 무료강좌: <br>https://www.codecademy.com/learn/learn-html
+
+</pre>
+
+
+
+
+
+
 
 
 </body>
